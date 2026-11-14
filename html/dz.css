@@ -192,15 +192,7 @@ button {
     right: 8px;
     bottom: 5px;
 }
-.learn {
-    height: 520px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background:
-       
-}
+
 .learn-content {
     margin-top: -20px;
 }
