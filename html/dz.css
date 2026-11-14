@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+    background: white;
+}
+
+header {
+    height: 80px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    background: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.logo-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+.logo b {
+    display: block;
+    font-size: 17px;
+}
+.logo small {
+    display: block;
+    color: #999;
+    font-size: 10px;
+    margin-top: 3px;
+}
+nav {
+    display: flex;
+    gap: 8px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 12px 15px;
+}
+nav .active {
+    color: #f7941d;
+    background: #fff7ed;
+    border-radius: 5px;
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+}
+button {
+    border: none;
+    border-radius: 11px;
+    padding: 14px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right button,
+.orange {
+    background: #ff922d;
+    color: white;
+}
+.blue {
+    background: #29475f;
+    color: white;
+    margin-left: 10px;
+}
+.hero {
+    min-height: 510px;
+    padding: 65px 8%;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    background-image:
+        linear-gradient(#ffffffcc, #ffffffcc),
+        repeating-linear-gradient(
+            90deg,
+            transparent 0,
+            transparent 58px,
+            #eeeeee 59px
+        );
+}
+.hero-left {
+    width: 55%;
+}
+.hero-left h1 {
+    font-size: 35px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+.hero-left p {
+    color: #777;
+    font-size: 17px;
+    line-height: 1.65;
+    max-width: 650px;
+    margin-bottom: 28px;
+}
+.hero-right {
+    width: 45%;
+}
+.hero-right img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.students {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+.people {
+    color: #222;
+    letter-spacing: -7px;
+    font-size: 20px;
+}
+.students b {
+    font-size: 13px;
+}
+.students small {
+    display: block;
+    color: #999;
+    font-size: 11px;
+    margin-top: 5px;
+}
+.numbers {
+    padding: 65px 5.5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+.number-card {
+    height: 275px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 27px;
+    position: relative;
+    overflow: hidden;
+}
+.number-card:nth-child(1) {
+    background: #fff7ec;
+}
+.number-card:nth-child(2) {
+    background: #f4f8ff;
+}
+.number-card:nth-child(3) {
+    background: #effcf7;
+}
+.number-card:nth-child(4) {
+    background: #f7f4ff;
+}
+.number-card small {
+    color: #999;
+    font-size: 12px;
+}
+.number-card h2 {
+    font-size: 43px;
+    margin-top: 28px;
+}
+.number-card p {
+    color: #555;
+    line-height: 1.5;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.number-card img {
+    width: 130px;
+    height: 100px;
+    object-fit: contain;
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+}
+.learn {
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+       
+}
+.learn-content {
+    margin-top: -20px;
+}
+.learn h2 {
+    font-size: 46px;
+    line-height: 1.35;
+}
+.learn p {
+    color: #777;
+    margin: 18px 0 30px;
+    font-size: 16px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+@media (max-width: 800px) {
+
+    header {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right {
+        gap: 8px;
+    }
+
+    .hero {
+        display: block;
+        padding: 45px 20px;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-right {
+        margin-top: 30px;
+    }
+
+    .hero-left h1 {
+        font-size: 27px;
+    }
+
+    .numbers {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 15px;
+    }
+
+    .number-card {
+        height: 220px;
+    }
+
+    .learn {
+        height: 430px;
+    }
+
+    .learn h2 {
+        font-size: 35px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .partner-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
