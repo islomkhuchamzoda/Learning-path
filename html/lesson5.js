@@ -9,11 +9,6 @@
     case 7: console.log("voscrseni");break; 
     default: console.log("net tolka den"); 
   }
-
-
-
-
-
   const a = 12;
   const b = 4;
   const operation = "*";
