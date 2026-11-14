@@ -23,11 +23,6 @@
   }
   console.log(result);
 
-  
-
-
-
-
   let balans = 5000;
 const shoice = 2 ;
 const ammount = 1500;
