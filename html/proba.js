@@ -1,19 +1,16 @@
+;
+  let V1 = prompt("Enter the V1:");
+let V2 = prompt("Enter the V2:");
+let T = prompt("Enter the T:");
+
+let S_start = 2;
 
 
+let S1 = V1 * T 
+let S2 = V2 * T
+S_final = S1 + S2 + S_start;
 
- let a2 =5
- a2=  a2**3
- let S = 5*a2**2
-  console.log(S);
-  
-
-  let a1=3
-  let b1=4
-   
-  let c = Math.sqrt ( a1**2+b1*2 )
-  let p = a1 + b2 + c
-
-  console.log(p);
+ console.log("V1 is " + S_final);
 
 
 
