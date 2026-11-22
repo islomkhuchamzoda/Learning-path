@@ -296,3 +296,170 @@ footer p{
     padding:15px;
     font-size:17px;
 }
+
+
+
+
+
+
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.boxx,
+.wrapp {
+  width: 100%;
+  padding: 0 20px;
+}
+
+
+@media (max-width: 1100px) {
+  .nav {
+    gap: 12px;
+    font-size: 11px;
+  }
+
+  .cards-grid,
+  .grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .steps-grid,
+  .wf-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .hero-grid,
+  .ctrl-grid,
+  .bonuses-flex,
+  .cards-row,
+  .footer-grid {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .stats-grid,
+  .grid-4,
+  .tariffs,
+  .feat-grid,
+  .aud-grid,
+  .videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-bar {
+    border-radius: 24px;
+    margin: 0 16px;
+  }
+
+  .mock-card {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .boxx h2,
+  .wrapp h1,
+  .adv-header h2,
+  .feat-header h2,
+  .aud-header h2,
+  .ctrl-left h2,
+  .workday-section h2,
+  .faq-section h2 {
+    font-size: 28px;
+  }
+}
+
+
+@media (max-width: 560px) {
+  body {
+    padding-top: 64px;
+  }
+
+  .header-inner {
+    min-height: 60px;
+    gap: 8px;
+  }
+
+  .logo img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo-text small,
+  .header-actions .phone {
+    display: none;
+  }
+
+  .btn-primary {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding-top: 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero-cta,
+  .stores,
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-yellow,
+  .btn-link,
+  .store-btn,
+  .cta-btn-white,
+  .cta-btn-wa {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .qr-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards-grid,
+  .steps-grid,
+  .wf-grid,
+  .videos-grid,
+  .feat-grid,
+  .aud-grid,
+  .grid-5,
+  .grid-4,
+  .tariffs,
+  .stats-grid,
+  .dash-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .trial-box,
+  .cloud-box,
+  .cta-box,
+  .card,
+  .card-box {
+    padding: 22px 18px;
+  }
+
+  .trial-box h2,
+  .cta-box h2 {
+    font-size: 24px;
+  }
+}
