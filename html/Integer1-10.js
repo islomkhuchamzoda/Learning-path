@@ -71,15 +71,17 @@ let f1 = Math.floor (A1/10)
 console.log(f3);*/
 
 //10 
-let a = 145 
+let n = 145 
 
-let a2 = Math.floor (a/10)
-let a3 = Math.floor (a%10)
-let a4 = Math.floor (a/10)
 
-let a5 =  a2 + a3 + a4 *10 
+let a =  Math.floor ( n / 100)
+let b = Math.floor (n / 10 ) % 10
+let c = Math.floor(n % 10)
 
-console.log(a5);
+console.log(c * 100 + b * 10 + a);
+
+
+
 
 
 
